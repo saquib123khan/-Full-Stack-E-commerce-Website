@@ -6,6 +6,7 @@ import connectCloudinary from './config/cloudinary.js'
 import userRouter from './routes/user.route.js'
 import errorMiddleware from './middlewares/error.middleware.js'
 import productRouter from './routes/product.route.js'
+import cartRouter from './routes/cart.route.js'
 
 // App config
 const app = express()
@@ -21,6 +22,7 @@ app.use(errorMiddleware)
 // api endpoints
 app.use('/api/user', userRouter)
 app.use('/api/product', productRouter)
+app.use('/api/cart',cartRouter)
 
 app.get('/', (req,res)=>{
     res.send('API working')

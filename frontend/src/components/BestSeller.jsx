@@ -10,11 +10,11 @@ const BestSeller = () => {
   useEffect(() => {
     const bestProduct = products.filter((item) => (item.bestseller));
     setBestSeller(bestProduct.slice(0,5));
-  }, []);
+  }, [products]);
   return (
     <div className="my-10">
       <div className="text-center text-3xl py-8">
-        <Title text1={"BEST"} text2={"SELLERS"} />
+        <Title text1={"BEST "} text2={"SELLERS"} />
         <p className="w-3/4 m-auto text-sm sm:text-sm md:text-base text-gray-600">
           Discover the latest trends in fashion with our exclusive collection,
           featuring stylish, comfortable, and high-quality.

@@ -28,6 +28,7 @@ const loginUser = async (req, res, next) => {
                 message:'User login successfully',
                 token
             })
+            console.log(token)
         }else{
             return next(new AppError("password doesn't match", 401))
         }

@@ -1,4 +1,5 @@
 import userModel from "../models/user.model.js"
+import AppError from "../utils/error.utils.js"
 
 // add products to cart
 const addToCart = async(req, res, next) => {

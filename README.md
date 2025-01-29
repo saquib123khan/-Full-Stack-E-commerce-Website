@@ -1,6 +1,4 @@
-# Project Title
-
-## E-Commerce Website
+# E-Commerce Website
 
 A summary
 
